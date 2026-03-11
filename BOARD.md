@@ -31,7 +31,9 @@
 - [ ] Domain & SSL setup
 
 ## 📋 IN PROGRESS
-- Repo setup & git workflow
+- Backend API development (Express server, XTracker integration)
+- Frontend component implementation
+- Paper trading logic design
 
 ## ✅ DONE
 - [x] GitHub repository created
@@ -39,6 +41,11 @@
 - [x] Base files (BOARD.md, PLAN.md, package.json)
 - [x] Git credential helper configured
 - [x] Initial commit pushed
+- [x] XTracker data structure analyzed (6,451 tweets, date range, hourly patterns)
+- [x] Burst detection algorithm refined (threshold ≥8 tweets/15min = 99.3rd percentile)
+- [x] Thematic classification improved (Tesla/SpaceX/IA/politics/Grok/X keyword lists expanded)
+- [x] Gaussian model parameters derived from historical data (daily: μ=48.5 σ=25.75; burst intensity: μ=9.30 σ=1.86)
+- [x] Data insights documented (see data/insights.md)
 
 ---
 **Sprint Goal**: Functioning prototype with gauss visualization, bursts detection, and paper trading simulation.

@@ -1,0 +1,15 @@
+node_modules/
+package-lock.json
+backend/node_modules
+backend/package-lock.json
+data/tweets_sample.json
+data/*.json
+!data/insights.md
+!data/word_freq.json
+!data/burst_analysis.json
+!data/burst_info.json
+!data/bucket_15min.json
+!data/daily_counts.json
+!data/stats.json
+backend/data/
+backend/lib/
