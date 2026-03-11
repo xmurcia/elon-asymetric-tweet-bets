@@ -85,5 +85,21 @@
 4. Build Gaussian visualization using actual burst‑intensity distribution (μ≈9.3, σ≈1.86) or daily tweet distribution.
 5. Implement paper‑trading ledger and P&L tracking.
 
+## Recommendations for GaussChart Visualization
+The current GaussChart uses placeholder parameters (μ=220, σ=50) labeled “Tweet Count”. This does not match any observed distribution of tweet counts.
+
+**Suggested alternatives**:
+1. **Burst intensity distribution** (tweets per 15‑min burst) – μ≈9.30, σ≈1.86  
+   *Pros*: Directly models the signal used for trading decisions.  
+   *Cons*: Range is narrow (6–15 tweets), may not fill chart nicely.
+
+2. **Daily tweet‑count distribution** – μ≈48.5, σ≈25.75  
+   *Pros*: Wider range, more visually appealing Gaussian shape.  
+   *Cons*: Not directly tied to burst‑based trading signals.
+
+3. **Scaled burst intensity** – Scale burst counts to a range 0–1000 (e.g., multiply by 100) to match the placeholder’s magnitude while preserving relative variation.
+
+**Implementation**: Update `GaussChart.js` to accept μ and σ as props, defaulting to the chosen distribution. Provide a dropdown in the UI to switch between daily/burst views.
+
 ---
 *Analysis performed on 2026‑03‑11 by Data Analyst subagent.*
