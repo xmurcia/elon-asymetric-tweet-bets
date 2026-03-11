@@ -1,0 +1,1172 @@
+[
+  {
+    "bucketIndex": 32,
+    "count": 9,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 4,
+      "spacex": 2,
+      "ia": 2,
+      "politics": 1,
+      "grok": 1,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 1750,
+    "count": 8,
+    "dominantTheme": "grok",
+    "themeCounts": {
+      "tesla": 4,
+      "spacex": 0,
+      "ia": 4,
+      "politics": 0,
+      "grok": 7,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 2326,
+    "count": 8,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 2,
+      "spacex": 0,
+      "ia": 2,
+      "politics": 2,
+      "grok": 2,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 2445,
+    "count": 8,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 3,
+      "spacex": 1,
+      "ia": 1,
+      "politics": 0,
+      "grok": 0,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 2470,
+    "count": 10,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 2,
+      "spacex": 1,
+      "ia": 1,
+      "politics": 1,
+      "grok": 2,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 3006,
+    "count": 8,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 2,
+      "spacex": 1,
+      "ia": 2,
+      "politics": 0,
+      "grok": 1,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 3294,
+    "count": 10,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 6,
+      "spacex": 2,
+      "ia": 1,
+      "politics": 0,
+      "grok": 1,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 3313,
+    "count": 8,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 5,
+      "spacex": 0,
+      "ia": 2,
+      "politics": 1,
+      "grok": 2,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 3432,
+    "count": 8,
+    "dominantTheme": "ia",
+    "themeCounts": {
+      "tesla": 0,
+      "spacex": 0,
+      "ia": 1,
+      "politics": 1,
+      "grok": 0,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 3504,
+    "count": 8,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 1,
+      "spacex": 0,
+      "ia": 0,
+      "politics": 1,
+      "grok": 0,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 3505,
+    "count": 9,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 1,
+      "spacex": 0,
+      "ia": 0,
+      "politics": 0,
+      "grok": 0,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 3684,
+    "count": 11,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 3,
+      "spacex": 1,
+      "ia": 2,
+      "politics": 0,
+      "grok": 1,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 3863,
+    "count": 8,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 2,
+      "spacex": 2,
+      "ia": 1,
+      "politics": 0,
+      "grok": 2,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 3864,
+    "count": 10,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 1,
+      "spacex": 0,
+      "ia": 1,
+      "politics": 0,
+      "grok": 0,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 3895,
+    "count": 10,
+    "dominantTheme": "spacex",
+    "themeCounts": {
+      "tesla": 2,
+      "spacex": 4,
+      "ia": 2,
+      "politics": 0,
+      "grok": 1,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 4547,
+    "count": 9,
+    "dominantTheme": "ia",
+    "themeCounts": {
+      "tesla": 0,
+      "spacex": 1,
+      "ia": 3,
+      "politics": 0,
+      "grok": 0,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 4570,
+    "count": 8,
+    "dominantTheme": "spacex",
+    "themeCounts": {
+      "tesla": 0,
+      "spacex": 1,
+      "ia": 0,
+      "politics": 0,
+      "grok": 1,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 4571,
+    "count": 10,
+    "dominantTheme": "ia",
+    "themeCounts": {
+      "tesla": 2,
+      "spacex": 1,
+      "ia": 4,
+      "politics": 0,
+      "grok": 1,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 4572,
+    "count": 9,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 4,
+      "spacex": 2,
+      "ia": 2,
+      "politics": 0,
+      "grok": 1,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 4728,
+    "count": 10,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 2,
+      "spacex": 0,
+      "ia": 1,
+      "politics": 0,
+      "grok": 1,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 4896,
+    "count": 8,
+    "dominantTheme": "grok",
+    "themeCounts": {
+      "tesla": 1,
+      "spacex": 0,
+      "ia": 0,
+      "politics": 0,
+      "grok": 3,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 5264,
+    "count": 8,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 4,
+      "spacex": 3,
+      "ia": 1,
+      "politics": 0,
+      "grok": 2,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 5437,
+    "count": 8,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 2,
+      "spacex": 0,
+      "ia": 2,
+      "politics": 1,
+      "grok": 1,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 5691,
+    "count": 8,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 2,
+      "spacex": 0,
+      "ia": 1,
+      "politics": 1,
+      "grok": 0,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 5693,
+    "count": 8,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 2,
+      "spacex": 0,
+      "ia": 0,
+      "politics": 0,
+      "grok": 0,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 5695,
+    "count": 9,
+    "dominantTheme": "none",
+    "themeCounts": {
+      "tesla": 0,
+      "spacex": 0,
+      "ia": 0,
+      "politics": 0,
+      "grok": 0,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 5820,
+    "count": 14,
+    "dominantTheme": "politics",
+    "themeCounts": {
+      "tesla": 0,
+      "spacex": 0,
+      "ia": 1,
+      "politics": 3,
+      "grok": 0,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 5842,
+    "count": 10,
+    "dominantTheme": "ia",
+    "themeCounts": {
+      "tesla": 1,
+      "spacex": 0,
+      "ia": 2,
+      "politics": 0,
+      "grok": 1,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 5853,
+    "count": 8,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 1,
+      "spacex": 1,
+      "ia": 1,
+      "politics": 1,
+      "grok": 0,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 5922,
+    "count": 8,
+    "dominantTheme": "ia",
+    "themeCounts": {
+      "tesla": 0,
+      "spacex": 0,
+      "ia": 1,
+      "politics": 0,
+      "grok": 1,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 5946,
+    "count": 10,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 2,
+      "spacex": 1,
+      "ia": 2,
+      "politics": 0,
+      "grok": 0,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 6034,
+    "count": 11,
+    "dominantTheme": "ia",
+    "themeCounts": {
+      "tesla": 2,
+      "spacex": 1,
+      "ia": 3,
+      "politics": 1,
+      "grok": 1,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 6035,
+    "count": 8,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 2,
+      "spacex": 0,
+      "ia": 0,
+      "politics": 0,
+      "grok": 2,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 6068,
+    "count": 9,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 4,
+      "spacex": 0,
+      "ia": 1,
+      "politics": 0,
+      "grok": 0,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 6112,
+    "count": 11,
+    "dominantTheme": "ia",
+    "themeCounts": {
+      "tesla": 1,
+      "spacex": 1,
+      "ia": 3,
+      "politics": 2,
+      "grok": 1,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 6113,
+    "count": 10,
+    "dominantTheme": "ia",
+    "themeCounts": {
+      "tesla": 0,
+      "spacex": 0,
+      "ia": 1,
+      "politics": 0,
+      "grok": 1,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 6158,
+    "count": 8,
+    "dominantTheme": "grok",
+    "themeCounts": {
+      "tesla": 2,
+      "spacex": 0,
+      "ia": 3,
+      "politics": 0,
+      "grok": 4,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 6214,
+    "count": 8,
+    "dominantTheme": "politics",
+    "themeCounts": {
+      "tesla": 1,
+      "spacex": 0,
+      "ia": 1,
+      "politics": 2,
+      "grok": 2,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 6303,
+    "count": 10,
+    "dominantTheme": "ia",
+    "themeCounts": {
+      "tesla": 1,
+      "spacex": 1,
+      "ia": 6,
+      "politics": 0,
+      "grok": 5,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 6394,
+    "count": 8,
+    "dominantTheme": "ia",
+    "themeCounts": {
+      "tesla": 0,
+      "spacex": 0,
+      "ia": 2,
+      "politics": 0,
+      "grok": 1,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 6456,
+    "count": 9,
+    "dominantTheme": "ia",
+    "themeCounts": {
+      "tesla": 1,
+      "spacex": 0,
+      "ia": 4,
+      "politics": 0,
+      "grok": 4,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 6595,
+    "count": 8,
+    "dominantTheme": "grok",
+    "themeCounts": {
+      "tesla": 1,
+      "spacex": 0,
+      "ia": 1,
+      "politics": 0,
+      "grok": 2,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 6596,
+    "count": 10,
+    "dominantTheme": "ia",
+    "themeCounts": {
+      "tesla": 1,
+      "spacex": 0,
+      "ia": 3,
+      "politics": 1,
+      "grok": 3,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 6688,
+    "count": 9,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 3,
+      "spacex": 0,
+      "ia": 1,
+      "politics": 0,
+      "grok": 0,
+      "x": 1
+    }
+  },
+  {
+    "bucketIndex": 6752,
+    "count": 13,
+    "dominantTheme": "ia",
+    "themeCounts": {
+      "tesla": 1,
+      "spacex": 0,
+      "ia": 4,
+      "politics": 1,
+      "grok": 3,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 6753,
+    "count": 17,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 3,
+      "spacex": 0,
+      "ia": 2,
+      "politics": 0,
+      "grok": 1,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 6754,
+    "count": 14,
+    "dominantTheme": "grok",
+    "themeCounts": {
+      "tesla": 3,
+      "spacex": 0,
+      "ia": 3,
+      "politics": 2,
+      "grok": 6,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 6833,
+    "count": 9,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 2,
+      "spacex": 0,
+      "ia": 0,
+      "politics": 0,
+      "grok": 2,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 6837,
+    "count": 9,
+    "dominantTheme": "ia",
+    "themeCounts": {
+      "tesla": 0,
+      "spacex": 0,
+      "ia": 3,
+      "politics": 0,
+      "grok": 2,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 6869,
+    "count": 8,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 1,
+      "spacex": 1,
+      "ia": 1,
+      "politics": 0,
+      "grok": 1,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 6873,
+    "count": 11,
+    "dominantTheme": "grok",
+    "themeCounts": {
+      "tesla": 2,
+      "spacex": 1,
+      "ia": 6,
+      "politics": 1,
+      "grok": 7,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 7220,
+    "count": 8,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 3,
+      "spacex": 0,
+      "ia": 3,
+      "politics": 0,
+      "grok": 2,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 7252,
+    "count": 10,
+    "dominantTheme": "politics",
+    "themeCounts": {
+      "tesla": 1,
+      "spacex": 0,
+      "ia": 0,
+      "politics": 2,
+      "grok": 0,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 7254,
+    "count": 8,
+    "dominantTheme": "politics",
+    "themeCounts": {
+      "tesla": 1,
+      "spacex": 0,
+      "ia": 0,
+      "politics": 2,
+      "grok": 0,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 7318,
+    "count": 8,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 4,
+      "spacex": 1,
+      "ia": 2,
+      "politics": 0,
+      "grok": 3,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 7414,
+    "count": 14,
+    "dominantTheme": "grok",
+    "themeCounts": {
+      "tesla": 3,
+      "spacex": 1,
+      "ia": 0,
+      "politics": 2,
+      "grok": 4,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 7449,
+    "count": 8,
+    "dominantTheme": "ia",
+    "themeCounts": {
+      "tesla": 0,
+      "spacex": 0,
+      "ia": 3,
+      "politics": 2,
+      "grok": 1,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 7450,
+    "count": 10,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 3,
+      "spacex": 0,
+      "ia": 2,
+      "politics": 1,
+      "grok": 0,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 7459,
+    "count": 9,
+    "dominantTheme": "ia",
+    "themeCounts": {
+      "tesla": 1,
+      "spacex": 0,
+      "ia": 2,
+      "politics": 1,
+      "grok": 0,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 7461,
+    "count": 10,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 5,
+      "spacex": 0,
+      "ia": 0,
+      "politics": 1,
+      "grok": 0,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 7585,
+    "count": 8,
+    "dominantTheme": "politics",
+    "themeCounts": {
+      "tesla": 0,
+      "spacex": 1,
+      "ia": 1,
+      "politics": 2,
+      "grok": 1,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 7586,
+    "count": 10,
+    "dominantTheme": "ia",
+    "themeCounts": {
+      "tesla": 2,
+      "spacex": 1,
+      "ia": 4,
+      "politics": 2,
+      "grok": 1,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 7613,
+    "count": 8,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 2,
+      "spacex": 0,
+      "ia": 2,
+      "politics": 0,
+      "grok": 2,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 8046,
+    "count": 9,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 3,
+      "spacex": 1,
+      "ia": 2,
+      "politics": 0,
+      "grok": 0,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 8068,
+    "count": 8,
+    "dominantTheme": "politics",
+    "themeCounts": {
+      "tesla": 2,
+      "spacex": 1,
+      "ia": 1,
+      "politics": 3,
+      "grok": 0,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 8277,
+    "count": 8,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 2,
+      "spacex": 1,
+      "ia": 2,
+      "politics": 0,
+      "grok": 0,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 8408,
+    "count": 8,
+    "dominantTheme": "ia",
+    "themeCounts": {
+      "tesla": 2,
+      "spacex": 0,
+      "ia": 4,
+      "politics": 1,
+      "grok": 1,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 8498,
+    "count": 8,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 3,
+      "spacex": 1,
+      "ia": 0,
+      "politics": 0,
+      "grok": 0,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 8561,
+    "count": 9,
+    "dominantTheme": "ia",
+    "themeCounts": {
+      "tesla": 1,
+      "spacex": 0,
+      "ia": 6,
+      "politics": 0,
+      "grok": 4,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 8696,
+    "count": 8,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 7,
+      "spacex": 0,
+      "ia": 4,
+      "politics": 0,
+      "grok": 1,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 9743,
+    "count": 11,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 5,
+      "spacex": 2,
+      "ia": 2,
+      "politics": 1,
+      "grok": 0,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 9744,
+    "count": 9,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 2,
+      "spacex": 1,
+      "ia": 1,
+      "politics": 2,
+      "grok": 1,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 9764,
+    "count": 8,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 4,
+      "spacex": 0,
+      "ia": 1,
+      "politics": 2,
+      "grok": 1,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 9841,
+    "count": 14,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 1,
+      "spacex": 0,
+      "ia": 1,
+      "politics": 1,
+      "grok": 0,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 9843,
+    "count": 12,
+    "dominantTheme": "ia",
+    "themeCounts": {
+      "tesla": 4,
+      "spacex": 0,
+      "ia": 5,
+      "politics": 3,
+      "grok": 0,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 9845,
+    "count": 8,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 1,
+      "spacex": 0,
+      "ia": 1,
+      "politics": 0,
+      "grok": 1,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 9850,
+    "count": 8,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 1,
+      "spacex": 0,
+      "ia": 1,
+      "politics": 0,
+      "grok": 1,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 9937,
+    "count": 8,
+    "dominantTheme": "spacex",
+    "themeCounts": {
+      "tesla": 0,
+      "spacex": 1,
+      "ia": 1,
+      "politics": 1,
+      "grok": 0,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 9985,
+    "count": 9,
+    "dominantTheme": "ia",
+    "themeCounts": {
+      "tesla": 2,
+      "spacex": 3,
+      "ia": 5,
+      "politics": 0,
+      "grok": 2,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 10519,
+    "count": 8,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 2,
+      "spacex": 0,
+      "ia": 2,
+      "politics": 1,
+      "grok": 0,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 10775,
+    "count": 9,
+    "dominantTheme": "grok",
+    "themeCounts": {
+      "tesla": 1,
+      "spacex": 1,
+      "ia": 3,
+      "politics": 0,
+      "grok": 4,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 11134,
+    "count": 8,
+    "dominantTheme": "ia",
+    "themeCounts": {
+      "tesla": 1,
+      "spacex": 1,
+      "ia": 2,
+      "politics": 0,
+      "grok": 1,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 11306,
+    "count": 8,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 2,
+      "spacex": 1,
+      "ia": 2,
+      "politics": 1,
+      "grok": 2,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 12224,
+    "count": 9,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 4,
+      "spacex": 1,
+      "ia": 3,
+      "politics": 0,
+      "grok": 3,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 12225,
+    "count": 9,
+    "dominantTheme": "ia",
+    "themeCounts": {
+      "tesla": 0,
+      "spacex": 1,
+      "ia": 4,
+      "politics": 0,
+      "grok": 4,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 12309,
+    "count": 16,
+    "dominantTheme": "tesla",
+    "themeCounts": {
+      "tesla": 3,
+      "spacex": 1,
+      "ia": 2,
+      "politics": 0,
+      "grok": 2,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 12507,
+    "count": 8,
+    "dominantTheme": "ia",
+    "themeCounts": {
+      "tesla": 1,
+      "spacex": 1,
+      "ia": 2,
+      "politics": 1,
+      "grok": 2,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 12530,
+    "count": 10,
+    "dominantTheme": "politics",
+    "themeCounts": {
+      "tesla": 0,
+      "spacex": 0,
+      "ia": 1,
+      "politics": 2,
+      "grok": 1,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 12532,
+    "count": 9,
+    "dominantTheme": "ia",
+    "themeCounts": {
+      "tesla": 2,
+      "spacex": 0,
+      "ia": 4,
+      "politics": 1,
+      "grok": 3,
+      "x": 0
+    }
+  },
+  {
+    "bucketIndex": 12533,
+    "count": 9,
+    "dominantTheme": "ia",
+    "themeCounts": {
+      "tesla": 0,
+      "spacex": 0,
+      "ia": 4,
+      "politics": 0,
+      "grok": 3,
+      "x": 0
+    }
+  }
+]
