@@ -1,2 +1,12 @@
-# elon-asymetric-tweet-bets
-Autonomous coding project about asymetrics bets on the Elon Musk tweets events in Polymarket
+# Asymetric Elon Bets App
+
+Dashboard Polymarket Elon tweets.
+
+## Setup
+npm install
+npm start
+
+## Features
+- Gauss model
+- Bursts heatmap
+- Paper trading
