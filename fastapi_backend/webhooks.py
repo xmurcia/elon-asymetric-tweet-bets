@@ -2,9 +2,10 @@ import hmac
 import hashlib
 import os
 import datetime
-from fastapi import APIRouter, Request, HTTPException, Depends, status
+from fastapi import APIRouter, Request, HTTPException, Depends
 from sqlalchemy.orm import Session
-from sqlalchemy import func # Import func for sum
+from sqlalchemy import func
+from sqlalchemy.exc import IntegrityError
 from dotenv import load_dotenv
 
 from .database import SessionLocal, engine
@@ -35,73 +36,91 @@ async def alchemy_webhook(request: Request, db: Session = Depends(get_db)):
     if not ALCHEMY_WEBHOOK_SECRET:
         raise HTTPException(status_code=500, detail="Alchemy webhook secret not configured.")
 
-    # 1. Verify Alchemy signature
+    # 1) Verify Alchemy signature
     signature = request.headers.get("X-Alchemy-Signature")
     if not signature:
         raise HTTPException(status_code=400, detail="X-Alchemy-Signature header missing.")
 
     body = await request.body()
     calculated_signature = hmac.new(
-        ALCHEMY_WEBHOOK_SECRET.encode('utf-8'),
+        ALCHEMY_WEBHOOK_SECRET.encode("utf-8"),
         body,
-        hashlib.sha256
+        hashlib.sha256,
     ).hexdigest()
 
     if not hmac.compare_digest(signature, calculated_signature):
         raise HTTPException(status_code=403, detail="Invalid Alchemy signature.")
 
-    # 2. Parse transaction data and validate USDC contract
+    # 2) Parse transaction data and validate USDC contract
     try:
         data = await request.json()
-        print(f"Received webhook data: {data}") # Log incoming data for debugging
-        # Assuming only one event for simplicity, adjust for multiple if needed
-        event = data['event']['activity'][0] # Alchemy activity webhook structure
-        
-        # Check if the event is a USDC transfer to our contract
-        if event['rawContract']['address'].lower() != USDC_CONTRACT_ADDRESS.lower():
-            return {"message": "Not a USDC transfer to the monitored contract, ignoring."}
 
-        # Extract relevant data
-        from_address = event['fromAddress']
-        to_address = event['toAddress']
-        value_wei = int(event['value'], 16) # Value is in wei, needs conversion
-        value_usdc = value_wei / (10**6) # USDC has 6 decimals
+        activity = (data or {}).get("event", {}).get("activity", [])
+        if not activity:
+            raise HTTPException(status_code=400, detail="No activity entries in webhook payload.")
 
-        # For tips, we assume the 'to_address' is the recipient of the tip.
-        # The 'from_address' is the sender.
-        # Alchemy webhooks provide 'value' and 'asset' for transfers.
-        # We also need transaction hash and timestamp.
-        transaction_hash = event['hash']
-        block_timestamp = event['blockNum'] # This might be block number, not timestamp, needs adjustment if real timestamp is required.
-                                            # Alchemy typically provides 'timestamp' if it's a 'MINED_TRANSACTION' webhook.
-                                            # For 'ADDRESS_ACTIVITY' webhooks, 'blockNum' is common.
-                                            # We may need to fetch block details for actual timestamp or adjust model.
-        
-        # For simplicity, using a placeholder for timestamp or re-evaluating data structure.
-        # Let's assume 'blockNum' can be used as a unique identifier for now, or we get a proper timestamp from 'data'.
-        # Alchemy's 'activity' has a 'timestamp' field for actual time, not just block number.
-        # Let's check if 'data['event']['activity'][0]['blockNum']' should be 'data['event']['activity'][0]['metadata']['blockTimestamp']'.
-        # For now, I'll use a placeholder for timestamp in the model and refine it after testing.
-        import datetime
-        timestamp = datetime.datetime.now() # Placeholder for now, to be replaced by actual transaction timestamp
-                                           # A proper Alchemy webhook for transfers would have 'log.block.timestamp' or similar.
-        
-        # 3. Persist tips confirmed in tabla `tips` de BD
+        # NOTE: currently processing only the first activity item.
+        event = activity[0]
+
+        raw_contract = (event or {}).get("rawContract", {})
+        token_address = (raw_contract.get("address") or "").lower()
+        if token_address != USDC_CONTRACT_ADDRESS.lower():
+            return {"message": "Not a monitored USDC transfer; ignoring."}
+
+        from_address = event.get("fromAddress")
+        to_address = event.get("toAddress")
+        if not from_address or not to_address:
+            raise HTTPException(status_code=400, detail="Missing fromAddress/toAddress.")
+
+        # Value may arrive as hex string (0x...) or decimal string
+        raw_value = event.get("value")
+        if raw_value is None:
+            raise HTTPException(status_code=400, detail="Missing value.")
+        if isinstance(raw_value, str) and raw_value.startswith("0x"):
+            value_base_units = int(raw_value, 16)
+        else:
+            value_base_units = int(raw_value)
+
+        value_usdc = value_base_units / (10**6)
+
+        transaction_hash = event.get("hash")
+        if not transaction_hash:
+            raise HTTPException(status_code=400, detail="Missing tx hash.")
+
+        # timestamp best-effort
+        ts = None
+        metadata = (event or {}).get("metadata", {})
+        for k in ("blockTimestamp", "timestamp"):
+            v = metadata.get(k) or event.get(k)
+            if isinstance(v, str):
+                try:
+                    ts = datetime.datetime.fromisoformat(v.replace("Z", "+00:00"))
+                    break
+                except ValueError:
+                    pass
+        timestamp = ts or datetime.datetime.now(datetime.timezone.utc)
+
+        # 3) Persist tip (idempotent by unique tx hash)
         new_tip = Tip(
             sender_address=from_address,
             amount=value_usdc,
             timestamp=timestamp,
             transaction_hash=transaction_hash,
-            is_confirmed=True # Webhook confirmation means it's confirmed
+            is_confirmed=True,
         )
         db.add(new_tip)
-        db.commit()
-        db.refresh(new_tip)
+        try:
+            db.commit()
+        except IntegrityError:
+            db.rollback()
+            return {"message": "Tip already processed.", "transaction_hash": transaction_hash}
 
+        db.refresh(new_tip)
         return {"message": "Tip received and processed successfully!", "tip_id": new_tip.id}
 
+    except HTTPException:
+        raise
     except Exception as e:
-        print(f"Error processing webhook: {e}")
         raise HTTPException(status_code=400, detail=f"Error processing webhook: {e}")
 
 @router.get("/recent")
