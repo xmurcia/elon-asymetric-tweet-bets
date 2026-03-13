@@ -2,6 +2,6 @@
 
 1. [x] BACKEND-DB-001 iniciado por DatabaseAgent
 2. [x] FRONTEND-WEB3-004 iniciado por Web3Agent
-3. [ ] BACKEND-JOBS-002 pendiente
+3. [x] BACKEND-JOBS-002 completado
 
 Actualizando BOARD.md...
