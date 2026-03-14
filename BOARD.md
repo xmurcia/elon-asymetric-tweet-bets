@@ -12,6 +12,6 @@ P0
 - [x] Add Playwright E2E smoke test (`npm run e2e`)
 
 P1
-- [ ] Add deploy/runbook docs (nginx/ssl/hetzner) + monitoring notes
-- [ ] Add minimal backend smoke script (curl) and CI workflow
+- [x] Add deploy/runbook docs (nginx/ssl/hetzner) + monitoring notes
+- [x] Add minimal backend smoke script (curl) and CI workflow
 - [ ] QA mobile + wallet reject edge cases
