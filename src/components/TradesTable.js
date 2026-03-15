@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import { api } from '../api/client';
 
 const TradesTable = () => {
   const [trades, setTrades] = useState([]);
@@ -15,7 +15,7 @@ const TradesTable = () => {
 
   const fetchTrades = async () => {
     try {
-      const response = await axios.get('/api/trades/paper');
+      const response = await api.get('/api/trades/paper');
       if (response.data.success) {
         setTrades(response.data.trades);
         setBankroll(response.data.bankroll);
@@ -36,7 +36,7 @@ const TradesTable = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('/api/trades/paper', newTrade);
+      const response = await api.post('/api/trades/paper', newTrade);
       if (response.data.success) {
         // Refresh trades list
         fetchTrades();

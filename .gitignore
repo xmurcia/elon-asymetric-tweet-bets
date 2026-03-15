@@ -1,7 +1,7 @@
 node_modules/
-package-lock.json
 backend/node_modules
-backend/package-lock.json
+build/
+fastapi_backend/__pycache__/
 data/tweets_sample.json
 data/*.json
 !data/insights.md

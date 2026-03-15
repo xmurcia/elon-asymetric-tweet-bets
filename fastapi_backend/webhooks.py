@@ -8,8 +8,8 @@ from sqlalchemy import func
 from sqlalchemy.exc import IntegrityError
 from dotenv import load_dotenv
 
-from .database import SessionLocal, engine
-from .models import Tip, Base
+from .database import Base, SessionLocal, engine
+from .models import Tip
 
 # Load environment variables
 load_dotenv()
